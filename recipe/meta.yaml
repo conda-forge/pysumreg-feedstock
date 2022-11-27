@@ -22,8 +22,6 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - pip
-    - setuptools-scm
 
 test:
   imports:
