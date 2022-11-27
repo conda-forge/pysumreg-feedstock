@@ -1,5 +1,5 @@
 {% set name = "pysumreg" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pysumreg-{{ version }}.tar.gz
-  sha256: 4939bec8feddcbeca06bb922062398605b00b5345da98b4eb22d1d77447ce0ed
+  sha256: 6d2f602344e5b5344269dac0ba7a942d1a5ebc80d727e9c7ea8fa7131e4d671b
 
 build:
   noarch: python
@@ -22,8 +22,6 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - pip
-    - setuptools-scm
 
 test:
   imports:
