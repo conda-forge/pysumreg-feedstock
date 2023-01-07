@@ -1,5 +1,5 @@
 {% set name = "pysumreg" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pysumreg-{{ version }}.tar.gz
-  sha256: 23170465e57c8e47bcb887a696dafd8222228e07d96ebc75a8ee004ffed4e074
+  sha256: eeed7b9adba38a463d2e395e8e2823a16a880adb982712c44cd6f7c97bbec97f
 
 build:
   noarch: python
