@@ -1,13 +1,13 @@
 {% set name = "pysumreg" %}
-{% set version = "1.0.6" %}
-{% set sha256 = "b195b27bcd6c8e1136f8a28ac726978f2a4cd79fa1dd7e32751fd0ede4346c7e" %}
+{% set version = "1.0.7" %}
+{% set sha256 = "8fd8718ca5aa5dca4495ed8d066913fa82010fcf6d8cf57efe0745ffd9c43dc1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pysumreg-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -18,8 +18,8 @@ build:
 requirements:
   host:
     - python >=3.8
-    - setuptools-scm
-    - setuptools-scm >=6.2
+    - setuptools >=64.0
+    - setuptools-scm >=8.0
     - pip
   run:
     - python >=3.8
